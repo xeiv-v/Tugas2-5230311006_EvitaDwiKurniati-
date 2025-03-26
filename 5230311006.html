@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET LOVER DAILY</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            
+            
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            background-image: url('https://as2.ftcdn.net/v2/jpg/05/39/70/53/1000_F_539705303_vQQ26LcRZEOBPglcMPmCAvNjR2BEZMJl.jpg');
+            background-size: cover;
+            background-position: center;
+            font-size: 24px;
+            
+        }
+        
+        footer {
+            
+            background-color:  #49a8bd;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #49a8bd;
+            width: 100%;
+        }
+
+
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu li:hover > a {
+            background-color: #3f80af;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #1e8ac5;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .submenu li a:hover {
+            background-color: #4779b5;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px; 
+        }
+
+        .gallery-item img {
+            width: 50%;
+            height: auto;
+            object-fit: cover; 
+            border-radius: 10px; 
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }  
+        main {
+        display: flex;
+        width: 80%;
+        margin: 20px 0;
+        }
+
+        article {
+        width: 80%;
+        padding: 15px;
+        background-color: #ffffff;
+        border: 2px solid black;
+        order: 1; 
+        }
+
+        aside {
+        border: 2px solid black; 
+        padding: 10px; 
+        width: 300px; 
+        background-color: white;
+        order: 2;
+         } 
+        aside h2 {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+.kategori-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.kategori-item {
+    background-color: #49a8bd;
+    color: white;
+    padding: 10px 15px;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.kategori-item:hover {
+    background-color: #3f80af;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    
+
+        <header>
+        <h2>PET LOVER DAILY</h2>
+
+        <p>Hewan happy, kamu happy, dompet? Gatau!</p>
+        
+        </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Hewan</a>
+                <ul class="submenu">
+                    <li><a href="#">Kucing</a></li>
+                    <li><a href="#">Anjing</a></li>
+                    <li><a href="#">Kelinci</a></li>
+                    <li><a href="#">Burung</a></li>
+                    <li><a href="#">Sugar Glider</a></li>
+                    <li><a href="#">Ikan</a></li>
+                    <li><a href="#">Kura-Kura</a></li>
+                    <li><a href="#">Rubah Fennec</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Galeri</a>
+                <ul class="submenu">
+                    <li><a href="#">Foto</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pet Store</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <div class="kategori-list">
+                <h2> Hewan yang bisa Kamu Pelihara di Rumah </h2>
+                <div class="kategori-item">Kucing</div>
+                <div class="kategori-item">Anjing</div>
+                <div class="kategori-item">Kelinci</div>
+                <div class="kategori-item">Burung</div>
+                <div class="kategori-item">Hamster</div>
+                <div class="kategori-item">Sugar Glider</div>
+                <div class="kategori-item">Ikan</div>
+                <div class="kategori-item">Kura-Kura</div>
+                <div class="kategori-item">Rubah Fennec</div>
+            </div>
+            
+            <h2>Foto</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFdl0wb5v55R8uB7oBE_xgSzEB1ZNNTJBWA&s">
+                </div>    
+                
+                <div class="gallery-item">
+                     <img src="https://akcdn.detik.net.id/visual/2023/08/21/cheems-balltzefoto-instagramcomballtze-1_11.jpeg?w=480&q=90">
+                </div>   
+                <div class="gallery-item">
+                    <img src="https://cdn1-production-images-kly.akamaized.net/0oauzqZdRi0ODqrgChQx13PZxyE=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3233586/original/068197700_1599696585-photo-1518796745738-41048802f99a.jpg">  
+                </div>   
+
+                <div class="gallery-item">
+                     <img src="https://cdn1-production-images-kly.akamaized.net/Az8MFGdua-znVHdXySb_2idoV1E=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2754625/original/020329900_1552914902-iStock-619402640.jpg"> 
+                </div> 
+               
+                <div class="gallery-item">
+                     <img src="https://i.pinimg.com/736x/6e/83/bb/6e83bb326aa5a52820467c7b4a3fe006.jpg">    
+                </div> 
+                <div class="gallery-item">
+                     <img src="https://statik.tempo.co/data/2013/08/06/id_208756/208756_650.jpg"> 
+                </div> 
+                 <div class="gallery-item">
+                    <img src="https://assets-a1.kompasiana.com/items/album/2023/09/15/hunian-jenis-ikan-guppy-shutterstock-1024x683-6504295e08a8b52a3349a862.jpg">
+                </div> 
+                <div class="gallery-item">
+                    <img src="https://cdn1.katadata.co.id/media/images/temp/2023/05/31/Ilustrasi_Kura-kura-2023_05_31-15_07_35_092a35bb5d3a6e039689d7175e03832c.jpg"> 
+                </div> 
+                <div class="gallery-item">
+                    <img src="https://cdn.grid.id/crop/0x0:0x0/780x800/photo/bobofoto/original/10225_fennec-fox-rubah-terlucu-di-dunia.JPG"> 
+                </div> 
+
+                <h2>Video</h2>
+                <figure> 
+                    <video
+                    src="kucing_akmal.mp4"
+                    width="300" 
+                    height="200"
+                    controls>  </video>
+                    <video
+                    src="hamster.mp4"
+                    width="300"
+                    height="200"
+                    controls> </video>
+                    <video
+                    src="koceng_lagi.mp4"
+                    width="300"
+                    height="200"
+                    controls> </video>
+                </figure>
+
+
+            </figure>
+
+            
+        </aside>
+        
+        <article>
+            
+            <p>by: 5230311006 [Evita DK]</p>
+            <h2>Kenapa Sih Kita Harus Cinta Sama Hewan?</h2>
+            <figure>
+                <img src=https://st3.depositphotos.com/1177973/13505/i/450/depositphotos_135050898-stock-photo-cute-friendly-pets.jpg>  
+            </figure>
+
+            <p>Pernah nggak sih kamu lihat kucing jalanan yang matanya berbinar waktu dikasih makan? Atau anjing yang loncat-loncat kegirangan pas pemiliknya pulang? Hewan itu bukan cuma sekadar makhluk hidup yang numpang hidup di bumi bareng kita, tapi mereka juga punya perasaan, bisa jadi sahabat setia, bahkan bisa bikin hidup kita lebih berwarna. Tapi sayangnya, masih banyak orang yang nggak peduli atau malah tega nyakitin mereka. Padahal, mencintai hewan itu bukan cuma baik buat mereka, tapi juga buat kita sendiri. Nih, ada beberapa alasan kenapa kita harus lebih peduli dan menyayangi hewan!</p>
+            <ol type="1">
+                <li>Hewan Itu Sahabat Paling Setia</li>
+
+                <p>Kalau kamu pikir manusia adalah makhluk paling setia, coba deh lihat hewan. Mereka nggak bakal ninggalin kamu cuma gara-gara mood swing atau beda pendapat. Kucing bakal tetap nempel meskipun kadang cuek, anjing bakal selalu menyambut kamu pulang dengan ekor yang nggak berhenti goyang. </p>
+                <p>Contohnya si Hachiko, anjing legendaris dari Jepang yang tetap nungguin tuannya di stasiun setiap hari, meskipun tuannya udah meninggal. Bayangin, selama bertahun-tahun dia tetap setia. Kalau itu bukan bukti cinta sejati, apa lagi?</p>
+                
+                <li>Mengajarkan Kita Jadi Lebih Peduli dan Bertanggung Jawab</li>
+                <p>Punya hewan peliharaan itu bukan cuma seru-seruan aja, tapi juga ngajarin kita tentang tanggung jawab, Mereka butuh makanan, minuman, tempat tinggal yang nyaman, dan perhatian. </p>
+                <p>Kalau kamu bisa rutin kasih makan kucing atau ngajak jalan-jalan anjing setiap hari, berarti kamu udah melatih diri buat jadi orang yang lebih bertanggung jawab. Bahkan buat anak-anak, punya hewan bisa ngajarin mereka buat lebih disiplin dan penyayan</p>
+                
+                <li>Mereka Juga Punya Perasaan Lho!</li>
+                <p>Pernah lihat video anjing yang nangis waktu ditinggal majikannya? Atau kucing yang nyariin anaknya yang hilang? Yap, hewan juga punya perasaan. Mereka bisa bahagia, sedih, takut, bahkan stres kalau diperlakukan dengan kasar.</p>
+                <p>Jadi, kalau ada orang yang bilang, "Ah, cuma hewan, ngapain dipikirin?" mereka salah besar! Hewan juga bisa merasakan kasih sayang, dan kalau kita baik ke mereka, mereka bakal balas dengan cinta yang tulus.</p>
+                
+                <li>Hewan Itu Dokter Mental Gratis</li>
+                <p>Percaya nggak kalau hewan bisa bikin kita lebih sehat, baik fisik maupun mental? Banyak penelitian yang membuktikan kalau main sama hewan bisa:</p>
+                <ul>
+                    <li>Mengurangi stres dan kecemasan</li>
+                    <li> Meningkatkan hormon kebahagiaan (serotonin dan oksitosin)</li>
+                    <li>Menurunkan tekanan darah</li>
+                    <li>Bikin kita lebih aktif dan nggak mageran</li>
+                </ul>
+
+                <li>Hewan Juga Punya Hak untuk Hidup dengan Baik</li>
+                <p>Sayangnya, nggak semua orang sadar kalau hewan juga punya hak buat hidup dengan layak. Masih banyak banget kasus penyiksaan hewan, mulai dari ditelantarkan, dipukuli, sampai diburu demi kesenangan manusia.</p>
+                <p>Beberapa bentuk kekejaman terhadap hewan yang masih sering terjadi:</p>
+                <ul>
+                    <li>🚫 Buang hewan peliharaan di jalanan gara-gara udah nggak mau rawat mereka.</li>
+                    <li>🚫 Paksa hewan buat jadi tontonan di sirkus atau pertunjukan yang menyiksa.</li>
+                    <li>🚫 Perburuan liar yang bikin banyak spesies hampir punah.</li>
+                    <li>🚫 Eksperimen kosmetik yang nyakitin hewan tanpa alasan jelas.</li>
+                </ul>
+            </ol>
+                <p>Menyayangi hewan itu bukan cuma soal punya peliharaan, tapi juga tentang bagaimana kita memperlakukan semua makhluk hidup dengan baik. Hewan bisa jadi sahabat setia, bikin kita lebih bahagia, ngajarin kita empati, bahkan punya peran penting dalam ekosistem.</p>
+                <p>Nggak harus langsung adopsi hewan kalau belum siap, kok! Hal-hal kecil seperti kasih makan kucing liar, nggak nyakitin hewan, dan ikut kampanye perlindungan hewan juga udah cukup buat menunjukkan kalau kita peduli.</p>
+                <p>Karena pada akhirnya, dunia ini bukan cuma milik manusia. Hewan juga berhak hidup bahagia. Jadi, udah siap buat lebih sayang sama mereka? 🐾💕</p>
+                
+            <section class="comments">
+                <h3>Komentar</h3>
+                <textarea id="komentar" name="komentar" rows="5" cols="40" placeholder="Masukkan komentar Anda..."></textarea>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        
+        <p>&copy; 2025 PET LOVER DAILY. EVITA DWI KURNIATI [5230311006] </p>
+    </footer>
+    
+</body>
+</html>
